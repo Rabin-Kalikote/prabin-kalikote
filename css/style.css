@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
+body {
+  font-family: "Roboto", Arial, serif;
+  line-height: 1.8;
+  font-size: 16px;
+  background: #e6f2ff;
+  color: #848484;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+body.fh5co-offcanvas {
+  overflow: hidden;
+}
+
+a {
+  color: #2da9d7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #2da9d7 !important;
+}
+a:active, a:focus {
+  outline: none;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+  font-size: 15px;
+  color: #848484;
+  font-family: "Roboto", Arial, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+  font-family: "Roboto", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+  h2{
+    font-size: 2.2rem;
+  }
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+::-webkit-selection {
+  color: #fcfcfc;
+  background: #2da9d7;
+}
+
+::-moz-selection {
+  color: #fcfcfc;
+  background: #2da9d7;
+}
+
+::selection {
+  color: #fcfcfc;
+  background: #2da9d7;
+}
+
+#fh5co-header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1030;
+  border-bottom: 1px solid #d9d9d9;
+  transition: .2s all ease-in-out;
+}
+#fh5co-header.hidden-header{
+  transform: translate(0,-100%);
+}
+#fh5co-header #fh5co-logo a {
+  max-width: 100%;
+  font-size: 3.7rem;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+#fh5co-header nav {
+  padding-top: 20px;
+}
+#fh5co-header nav ul {
+  padding: 0;
+  margin: 0;
+}
+#fh5co-header nav ul li {
+  padding: 0;
+  margin: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#fh5co-header nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-header nav ul li a {
+    padding: 5px;
+  }
+}
+#fh5co-header nav ul li a:hover, #fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#fh5co-header nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+
+.project-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px 10rem;
+}
+
+/* Create four equal columns that sits next to each other */
+.project-column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.project-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .project-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.page-content {
+  margin: 0 auto;
+  max-width: 620px;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+.page-content img {
+  max-width: 100%;
+  min-width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.page-content .mb0 {
+  margin-bottom: 0;
+}
+.page-content .meta {
+  margin-bottom: 20px;
+}
+.page-content .meta span {
+  color: #4d4d4d;
+}
+.page-content .meta a {
+  color: #4d4d4d;
+}
+.page-content .meta a:hover, .page-content .meta a:active, .page-content .meta a:focus {
+  color: #000 !important;
+}
+@media screen and (max-width: 480px) {
+  .page-content {
+    padding-top: 150px;
+    padding-bottom: 30px;
+  }
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  margin: 5rem auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+}
+
+/* Style the container */
+.form_container {
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+#fh5co-footer {
+  float: left;
+  width: 100%;
+  background: #00131a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #999999;
+}
+#fh5co-footer a {
+  color: #bfbfbf;
+}
+#fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
+  color: #fff !important;
+}
+#fh5co-footer .social {
+  margin-top: 20px;
+}
+#fh5co-footer .social a {
+  padding: 10px;
+  font-size: 3rem;
+  color: #999999 !important;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-footer .social a {
+    padding: 5px;
+  }
+}
+#fh5co-footer .social a:hover, #fh5co-footer .social a:active, #fh5co-footer .social a:focus {
+  color: #fff !important;
+}
+
+.square {
+  list-style: square;
+}
+
+.pt70 {
+  padding-top: 70px;
+}
+@media screen and (max-width: 480px) {
+  .pt70 {
+    padding-top: 30px;
+  }
+}
+
+.pb70 {
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 480px) {
+  .pb70 {
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
